@@ -14,7 +14,7 @@
   <body>
     <header>
         <section id="home">
-      <div class="container-fluid">
+      <div class="container">
           <h1>The Måneskin's music page</h1> 
           <p>Coraline: cover di Linda Riverditi</p>
             <button onclick="avvia()" id="btn-play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
@@ -30,11 +30,18 @@
         </video>
     </div>
         </div>
+        <section id="search-bar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchBar" >
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <ul id="songlist"></ul>
+        </section>
     </section>
         </header>
         <section id="cards">
             <div class="card" style="width: 18rem;">
-                <img src="../20220909-Weekly_Pr_2/start/assets/images/foto1.jpg" class="card-img-top" alt="...">
+                <img src=".." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
