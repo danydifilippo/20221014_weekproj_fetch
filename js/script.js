@@ -17,11 +17,12 @@ async function showApi() {
         showcard.appendChild(scheda);
     }
     
+
     const songList = document.getElementById('songlist');
     const searchBar = document.getElementById('searchBar');
     console.log(searchBar);
-    searchBar.addEventListener('keyup',(input) =>{
-        const searchString = input.target.value;
+    searchBar.addEventListener('keyup',(e) =>{
+        e = searchBar.value;
         const filteredSongs = music.filter( song =>{
         return song.album.title.includes(searchString)
     });
