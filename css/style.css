@@ -3,7 +3,21 @@ body {
     width: 100vw;
     height: 100vh;
 }
-.container
+header {
+    background-color: black;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 h1 {
     font-family: 'Pacifico', cursive;
     color: red;
@@ -20,16 +34,6 @@ header button {
 }
 
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    
-}
 header p{
     position: absolute;
     font-size: 20px;
@@ -63,8 +67,44 @@ header p{
 svg{
     color: red;
 }
+
+main {
+    background-image: url(../assets/bg_songs.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search-bar{
+    width: 30em;
+    padding: 20px;
+    margin: auto;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+} 
 .card{
-    width: 18rem;
+    width: 13rem;
+    color: #681124;
 }
 
+.card h5 {
+    font-size: 20px;
+    text-align: center;
+}
+.container-fluid {
+    max-width: 1480px;
+    text-align: center;
+    color: #681124;
+}
+h2 {
+    font-size: 70px;
+    padding: 0.3em;
+}
+footer{
+    background-color:#622936;
+    display: flex;
+    align-items: center;
+}
 
